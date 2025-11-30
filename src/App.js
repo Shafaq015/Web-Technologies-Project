@@ -1,24 +1,47 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+
+import Home from "./pages/Home";
+import Trainings from "./pages/Trainings";
+import Courses from "./pages/Courses";
+import About from "./pages/About";
+import Instructors from "./pages/Instructors";
+import Contact from "./pages/Contact";
+
+function Layout({ children }) {
+  const location = useLocation();
+
+  // Hide Navbar + Footer ONLY on Homepage "/"
+  const hideHeaderFooter = location.pathname === "/";
+
+  return (
+    <>
+      {!hideHeaderFooter && <Navbar />}
+
+      {children}
+
+      {!hideHeaderFooter && <Footer />}
+    </>
+  );
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Layout>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/trainings" element={<Trainings />} />
+          <Route path="/courses" element={<Courses />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/instructors" element={<Instructors />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </Layout>
+    </Router>
   );
 }
 

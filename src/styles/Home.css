@@ -1,0 +1,104 @@
+/* ------------------------------
+   HERO SECTION
+------------------------------ */
+.hero-section {
+  padding: 140px 0 120px 0;
+  background: url("../styles/bg-pattern.png") center top repeat;
+  background-size: 900px;
+  text-align: center;
+}
+
+/* Title */
+.hero-title {
+  font-size: 52px;
+  font-weight: 700;
+  color: #1b2a82;
+  margin-bottom: 70px;
+}
+
+/* ------------------------------
+   CARDS
+------------------------------ */
+.hero-card {
+  background: #ffffff;
+  padding: 40px 30px;
+  border-radius: 22px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+  transition: 0.3s ease;
+  min-height: 420px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Card hover */
+.hero-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.18);
+}
+
+/* Icon */
+.card-icon {
+  width: 130px;
+  margin-bottom: 25px;
+}
+
+/* Title */
+.card-title {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #1b1b1b;
+}
+
+/* Description */
+.card-desc {
+  color: #555;
+  font-size: 16px;
+  margin-bottom: 20px;
+  padding: 0 10px;
+}
+
+/* ------------------------------
+   EXPLORE MORE BUTTON
+------------------------------ */
+.explore-btn {
+  margin-top: 20px;
+  background: #1b2a82;
+  color: #ffffff;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.explore-btn:hover {
+  background: #0f1c60;
+  transform: translateY(-3px);
+}
+
+/* ------------------------------
+   RESPONSIVE FIXES
+------------------------------ */
+@media (max-width: 992px) {
+  .hero-title {
+    font-size: 42px;
+  }
+
+  .hero-card {
+    min-height: 380px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 36px;
+  }
+
+  .hero-section {
+    padding-top: 120px;
+  }
+}

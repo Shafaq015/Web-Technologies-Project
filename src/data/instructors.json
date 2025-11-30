@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Miss Nousheen",
+    "expertise": "Cyber Security Specialist",
+    "image": "/images/instructors/instructor1.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Abdul Moiz",
+    "expertise": "DevOps Engineer",
+    "image": "/images/instructors/instructor2.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Nimra Tariq",
+    "expertise": "Cloud Computing Instructor",
+    "image": "/images/instructors/instructor3.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Engr. Haseeb",
+    "expertise": "Cisco Networking Expert",
+    "image": "/images/instructors/instructor4.jpg"
+  }
+]

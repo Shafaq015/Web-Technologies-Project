@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "Cyber Security",
+    "desc": "Learn Ethical Hacking, Network Security & SOC Operations.",
+    "image": "/images/courses/cyber.png"
+  },
+  {
+    "id": 2,
+    "title": "DevOps Engineering",
+    "desc": "CI/CD, Docker, Kubernetes, Jenkins & Linux Automation.",
+    "image": "/images/courses/devops.png"
+  },
+  {
+    "id": 3,
+    "title": "Cloud Computing",
+    "desc": "AWS, Azure, Google Cloud, Virtualization and Deployment.",
+    "image": "/images/courses/cloud.png"
+  },
+  {
+    "id": 4,
+    "title": "Networking (CCNA)",
+    "desc": "CCNA Routing & Switching | Cisco Labs | Real Networking.",
+    "image": "/images/courses/network.png"
+  }
+]
